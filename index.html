@@ -41,7 +41,7 @@
     .card {
       width: 100%;
       max-width: 420px;
-      background: rgba(255, 255, 255, 0.75);  /* trắng 75% trong suốt */
+      background: rgba(255, 255, 255, 0.45);  /* trắng 75% trong suốt */
       border-radius: 24px;
       overflow: hidden;
       box-shadow: 0 8px 40px rgba(0,0,0,.10);
@@ -49,11 +49,11 @@
 
     /* ── Header ── */
     .header {
-      background: rgba(255, 255, 255, 0.72);
+      background: rgba(255, 255, 255, 0.45);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       padding: 40px 24px 32px;
-      text-align: left;
+      text-align: center;
       position: relative;
     }
     .header::after {
@@ -61,14 +61,18 @@
       position: absolute;
       bottom: -1px; left: 0; right: 0;
       height: 32px;
-      background: rgba(255, 255, 255, 0.72);
+      background: rgba(255, 255, 255, 0.45);
       border-radius: 32px 32px 0 0;
     }
 
     .avatar-wrap {
-      display: inline-block;
+      display: block;
+      text-align: center;
       position: relative;
       margin-bottom: 16px;
+    }
+    .avatar, .avatar-placeholder {
+      margin: 0 auto;
     }
     .avatar {
       width: 108px; height: 108px;
@@ -114,7 +118,7 @@
     }
 
     /* ── Body ── */
-    .body { padding: 16px 20px 24px; }
+    .body { padding: 16px 20px 24px; text-align: left; }
 
     /* Quick action buttons */
     .quick-actions {
@@ -181,7 +185,7 @@
       color: var(--primary);
     }
     .contact-row .icon svg { width: 18px; height: 18px; }
-    .contact-row .info { flex: 1; }
+    .contact-row .info { flex: 1; text-align: left; }
     .contact-row .label { font-size: 11px; color: var(--text-muted); }
     .contact-row .value { font-size: 14px; font-weight: 500; }
 
