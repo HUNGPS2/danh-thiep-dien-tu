@@ -49,9 +49,11 @@
 
     /* ── Header ── */
     .header {
-      background: linear-gradient(145deg, var(--primary), var(--accent));
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       padding: 40px 24px 32px;
-      text-align: center;
+      text-align: left;
       position: relative;
     }
     .header::after {
@@ -59,7 +61,7 @@
       position: absolute;
       bottom: -1px; left: 0; right: 0;
       height: 32px;
-      background: rgba(255, 255, 255, 0.75);  /* trắng 75% trong suốt */
+      background: rgba(255, 255, 255, 0.72);
       border-radius: 32px 32px 0 0;
     }
 
@@ -72,43 +74,43 @@
       width: 108px; height: 108px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid rgba(255,255,255,.4);
+      border: 3px solid var(--border);
       display: block;
     }
     .avatar-placeholder {
       width: 108px; height: 108px;
       border-radius: 50%;
-      background: rgba(255,255,255,.25);
-      border: 4px solid rgba(255,255,255,.4);
+      background: rgba(26,107,74,.1);
+      border: 3px solid var(--border);
       display: flex; align-items: center; justify-content: center;
-      font-size: 40px; color: #fff;
+      font-size: 40px; color: var(--primary);
     }
 
     .name {
       font-family: 'Playfair Display', serif;
       font-size: 26px;
       font-weight: 700;
-      color: #fff;
+      color: var(--text);
       margin-bottom: 6px;
     }
     .title {
       font-size: 13px;
       font-weight: 500;
-      color: rgba(255,255,255,.8);
+      color: var(--accent);
       margin-bottom: 4px;
       letter-spacing: .5px;
       text-transform: uppercase;
     }
     .company {
       font-size: 14px;
-      font-weight: 600;
-      color: rgba(255,255,255,.95);
+      font-weight: 700;
+      color: var(--primary);
     }
     .tagline {
       margin-top: 8px;
       font-size: 13px;
       font-style: italic;
-      color: rgba(255,255,255,.7);
+      color: var(--text-muted);
     }
 
     /* ── Body ── */
